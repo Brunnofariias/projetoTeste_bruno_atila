@@ -26,7 +26,7 @@ and open the template in the editor.
 
                 $resultadoTotal = $recebeNota1 + $recebeNota2 / 2; // media do aluno
 
-                If ((($recebeNota1 + $recebeNota2) / 2) >= 7) {
+                If ((($recebeNota1 + $recebeNota2) / 2) >= 7) { // condição da media
                     echo "$recebeAluno passou com nota $resultadoTotal";
                 } else {
                     echo "$recebeAluno nÃ£o passou! Ficou com nota $resultadoTotal";
@@ -35,7 +35,7 @@ and open the template in the editor.
 
         }
         
-        class recuperacao extends resultado {
+        class recuperacao extends resultado { // class recuperacao esta fazendo uma herança
             
             function nota() {
 
@@ -45,7 +45,7 @@ and open the template in the editor.
 
                 $resultadoTotal = $recebeNota1 + $recebeNota2 / 2; // media do aluno
 
-                If ((($recebeNota1 + $recebeNota2) / 2) >= 5) {
+                If ((($recebeNota1 + $recebeNota2) / 2) >= 5) { // condição da media
                     echo "$recebeAluno passou na recuperação com nota $resultadoTotal";
                 } else {
                     echo "$recebeAluno não passou na recuperação! Ficou com nota $resultadoTotal";
