@@ -35,6 +35,25 @@ and open the template in the editor.
 
         }
         
+        class recuperacao extends resultado {
+            
+            function nota() {
+
+                $recebeAluno = $this->aluno; // valiaveis que recebem os valores protegidos
+                $recebeNota1 = $this->nota1;
+                $recebeNota2 = $this->nota2;
+
+                $resultadoTotal = $recebeNota1 + $recebeNota2 / 2; // media do aluno
+
+                If ((($recebeNota1 + $recebeNota2) / 2) >= 5) {
+                    echo "$recebeAluno passou na recuperação com nota $resultadoTotal";
+                } else {
+                    echo "$recebeAluno não passou na recuperação! Ficou com nota $resultadoTotal";
+                }
+            }
+            
+        }
+        
                
         ?>
     </body>
